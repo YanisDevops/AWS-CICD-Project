@@ -9,7 +9,7 @@ if [ -n "$container_id" ]; then
     echo "Running container ID: $container_id"
     
     # Stop the container
-    echo "Stopping & deleting container..."
+    echo "Stopping container..."
     docker stop $container_id
     docker rm $container_id
 else
